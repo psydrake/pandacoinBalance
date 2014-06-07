@@ -85,7 +85,7 @@ def tradingPND(currency='BTC'):
         if (not pndLtc):
             logging.warn("No data found in memcache for trading_PND_LTC")
             return mReturn
-        mReturn = pndLTC['price']
+        mReturn = pndLtc['price']
     else:
         btcCurrency = json.loads(memcache.get('trading_BTC_' + currency))
         if (not btcCurrency):

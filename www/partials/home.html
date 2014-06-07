@@ -32,7 +32,8 @@
 		<div class="span12" ng-if="data.price && data.btcPrice">
 			<span class="text-muted">1 PND</span>
 			<span ng-if="data.currency !== 'BTC'">~</span>
-			<span ng-if="data.currency !== 'BTC'" class="text-muted">{{currencySymbol(data.currency)}}{{data.price | number:6}}</span>
+			<span ng-if="['BTC', 'LTC'].indexOf(data.currency) < 0" class="text-muted">{{currencySymbol(data.currency)}}{{data.price | number:6}}</span>
+			<span ng-if="data.currency === 'LTC'" class="text-muted">{{currencySymbol(data.currency)}}{{data.price | number:8}}</span>
 			~ <span class="text-muted">{{currencySymbol('BTC')}}{{data.btcPrice | number:8}}</span>
 		</div>
 	</div>
