@@ -1,14 +1,14 @@
 # Pandacoin PND Balance
 
 ## About
-Web / mobile app for checking the balance of your Darkcoin wallet address(es), as well as the currency value of Darkcoin.
+Web / mobile app for checking the balance of your Pandacoin (PND) wallet address(es), as well as the currency value of Pandacoin.
 
 ## Technical
 Pandacoin PND Balance consists of two parts:
 * A pure HTML / CSS / JavaScript front end built with the [AngularJS](http://angularjs.org/) JavaScript framework.
-* A [Google App Engine](https://developers.google.com/appengine/) back end, written in [Python](http://www.python.org/), that looks up wallet balance data from the [Darkcoin Blockchain](http://explorer.darkcoin.io/chain/DarkCoin/) and caches currency price data from the [cryptocoincharts.info](http://www.cryptocoincharts.info/) API.
+* A [Google App Engine](https://developers.google.com/appengine/) back end, written in [Python](http://www.python.org/), that looks up wallet balance data from the [Pandacoin PND Blockchain](http://pnd.showed.us/) and caches currency price data from the [cryptocoincharts.info](http://www.cryptocoincharts.info/) API.
 
-The front end communicates with the back end via [JSONP](http://en.wikipedia.org/wiki/JSONP) calls. The backend polls cryptocoincharts.info every 10 minutes, and it stores this data in [memcache](https://developers.google.com/appengine/docs/python/memcache/) for all subsequent client requests, in order to reduce load on the CryptoCoinCharts server. Wallet balance lookups from the Darkcoin Blockchain [API](http://explorer.darkcoin.io/chain/DarkCoin/q/) occur on demand.
+The front end communicates with the back end via [JSONP](http://en.wikipedia.org/wiki/JSONP) calls. The backend polls cryptocoincharts.info every 10 minutes, and it stores this data in [memcache](https://developers.google.com/appengine/docs/python/memcache/) for all subsequent client requests, in order to reduce load on the CryptoCoinCharts server. Wallet balance lookups from the Pandacoin (PND) Blockchain [API](http://pnd.showed.us/q) occur on demand.
 
 ## Project Structure
 This project is organized to make use of the Cordova command line tools (version 3.1).
@@ -32,18 +32,15 @@ I have had success running the project on my physical Android phone. On the comm
 * For Android: If you run `cordova build android` and get the error: "platforms/android/ant-build/AndroidManifest.xml:2: error: Error: Float types not allowed (at 'versionCode' with value 'NaN').",
 	run the `./setVersion.sh` script to overwrite the NaN value in that file.
 
-<!--
 ## Install On Your Device
 * [Android](https://play.google.com/store/apps/details?id=net.edrake.darkcoinbalance)
 * [Amazon Kindle Fire](http://www.amazon.com/Drake-Emko-Darkcoin-Balance/dp/B00KM6Y3KK)
 * [Windows Phone](http://www.windowsphone.com/en-us/store/app/darkcoin-balance/e6f1ed12-542f-42eb-8b91-8fb85090c1e2)
--->
 * [Chrome App](https://chrome.google.com/webstore/detail/lnaeedppehgnilkbklifknpnnldpcmgm)
-<!--
 * [Firefox OS](https://marketplace.firefox.com/app/darkcoin-balance/)
 * [Blackberry 10](http://appworld.blackberry.com/webstore/content/56531889/)
 * [Browse As A Web Site](http://d2a4gw4qtrw231.cloudfront.net/main.html)
--->
+
 ## Author
 Drake Emko - drakee (a) gmail.com
 * [@DrakeEmko](https://twitter.com/DrakeEmko)
