@@ -1,0 +1,20 @@
+<div class="jumbotron" ng-swipe-right="goto('edit')" ng-swipe-left="goto('about')">
+    <div class="row-fluid">
+		<div class="span12">
+
+		<h3 class="muted" style="text-align:left">Settings</h3>
+
+		<form name="settingsForm">
+		<table class="table table-settings">
+		    <tbody>
+				<tr>
+					<td>Non-PND Currency</td>
+					<td><select ng-model="data.preferredCurrency" ng-options="symbol for symbol in data.symbols"></select></td>
+				</tr>
+		    </tbody>
+		</table>
+		</form>
+
+		</div>
+	</div>
+</div>

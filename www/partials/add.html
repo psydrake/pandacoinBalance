@@ -1,0 +1,26 @@
+<div class="jumbotron">
+    <div class="row-fluid">
+		<div class="span12">
+			<form ng-submit="save()">
+				<div class="error" ng-show="errors">
+					<div ng-repeat="error in errors" ng-bind="error">
+					</div>
+				</div>
+
+				<table class="table-balances">
+					<tr>
+						<td style="text-align:left"><input ng-model="wallet.label" placeholder="Wallet Label" size="20" maxlength="20"/></td>
+					</tr>
+					<tr>
+						<td style="text-align:left"><input ng-model="wallet.address" placeholder="Wallet Address" size="44" maxlength="40"/></td>
+					</tr>
+				</table>
+				<div class="actionButtons">
+					<a href="javascript:void(0)" ng-click="cancel()"><i class="fa fa-times-circle cancel"></i> Cancel</a>
+					&nbsp;&nbsp;
+					<button><i class="fa fa-save save"></i> Save</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

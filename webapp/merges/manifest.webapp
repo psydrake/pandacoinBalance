@@ -1,0 +1,21 @@
+{
+  "version": "1.0.1",
+  "name": "Pandacoin PND Balance",
+  "description": "See how many Pandacoins (PND) you own and what they’re worth",
+  "launch_path": "/main.html",
+  "icons": {
+    "16": "/img/pandacoinBalance16.png",
+    "32": "/img/pandacoinBalance32.png",
+    "48": "/img/pandacoinBalance48.png",
+    "60": "/img/pandacoinBalance60.png",
+    "90": "/img/pandacoinBalance90.png",
+    "120": "/img/pandacoinBalance120.png",
+    "128": "/img/pandacoinBalance128.png",
+    "256": "/img/pandacoinBalance256.png"
+  },
+  "developer": {
+    "name": "Drake Emko",
+    "url": "https://github.com/psydrake"
+  },
+  "default_locale": "en"
+}

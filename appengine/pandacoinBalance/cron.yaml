@@ -1,0 +1,4 @@
+cron:
+- description: pull in data from cryptocoincharts.info
+  url: /tasks/pull-cryptocoincharts-data
+  schedule: every 10 minutes

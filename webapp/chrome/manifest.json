@@ -1,0 +1,15 @@
+{
+  "name": "Pandacoin PND Balance",
+  "description": "See how many Pandacoins (PND) you own and what they’re worth",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "icons": { "16": "pandacoinBalance16.png", "128": "pandacoinBalance128.png" },
+  "app": {
+    "urls": [
+	"http://d1nhig552bjwdu.cloudfront.net/main.html"
+    ],
+    "launch": {
+	"web_url": "http://d1nhig552bjwdu.cloudfront.net/main.html"
+    }
+  }
+}
