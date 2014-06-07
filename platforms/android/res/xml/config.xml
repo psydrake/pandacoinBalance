@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.edrake.darkcoinbalance" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.edrake.pandacoinbalance" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <preference name="AndroidLaunchMode" value="singleTop" />
     <feature name="App">
@@ -11,9 +11,9 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
-    <name>Darkcoin Balance</name>
+    <name>Pandacoin PND Balance</name>
     <description>
-		See how many Darkcoin you own and what they're worth.
+		See how many Pandacoins (PND) you own and what they're worth.
     </description>
     <author email="drakee@gmail.com" href="https://github.com/psydrake">
         Drake Emko

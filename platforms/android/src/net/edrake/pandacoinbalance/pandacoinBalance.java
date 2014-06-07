@@ -17,7 +17,7 @@
        under the License.
  */
 
-package net.edrake.darkcoinbalance;
+package net.edrake.pandacoinbalance;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -32,7 +32,7 @@ import org.apache.cordova.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class darkcoinBalance extends CordovaActivity {
+public class pandacoinBalance extends CordovaActivity {
 
 	Timer timer;
 
