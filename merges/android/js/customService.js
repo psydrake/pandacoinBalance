@@ -18,7 +18,7 @@ angular.module('app.customService', []).
 			doCustomActions: function() {
 				$timeout(function() {
 					if (typeof analytics !== "undefined") {
-						analytics.startTrackerWithId('UA-51344490-2');
+						analytics.startTrackerWithId('UA-51729267-2');
 					}
 				}, 1000);
 			}
