@@ -37,7 +37,9 @@ I have had success running the project on my physical Android phone. On the comm
 * [Android](https://play.google.com/store/apps/details?id=net.edrake.darkcoinbalance)
 * [Amazon Kindle Fire](http://www.amazon.com/Drake-Emko-Darkcoin-Balance/dp/B00KM6Y3KK)
 * [Windows Phone](http://www.windowsphone.com/en-us/store/app/darkcoin-balance/e6f1ed12-542f-42eb-8b91-8fb85090c1e2)
-* [Chrome App](https://chrome.google.com/webstore/detail/darkcoin-balance/klokkomogkjjijjhgloehmhkaogbdioj)
+-->
+* [Chrome App](https://chrome.google.com/webstore/detail/lnaeedppehgnilkbklifknpnnldpcmgm)
+<!--
 * [Firefox OS](https://marketplace.firefox.com/app/darkcoin-balance/)
 * [Blackberry 10](http://appworld.blackberry.com/webstore/content/56531889/)
 * [Browse As A Web Site](http://d2a4gw4qtrw231.cloudfront.net/main.html)
