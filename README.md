@@ -39,7 +39,7 @@ I have had success running the project on my physical Android phone. On the comm
 * [Chrome App](https://chrome.google.com/webstore/detail/lnaeedppehgnilkbklifknpnnldpcmgm)
 * [Firefox OS](https://marketplace.firefox.com/app/pandacoin-pnd-balance/)
 * [Blackberry 10](http://appworld.blackberry.com/webstore/content/56531889/)
-* [Browse As A Web Site](http://d1nhig552bjwdu.cloudfront.net/support.html)
+* [Browse As A Web Site](http://d1nhig552bjwdu.cloudfront.net/main.html)
 
 ## Author
 Drake Emko - drakee (a) gmail.com
