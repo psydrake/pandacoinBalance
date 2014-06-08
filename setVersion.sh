@@ -9,7 +9,7 @@
 VERSION=1.0
 
 # Only used in Android. Appended as minor version number if avaliable
-VERSION_CODE=1
+VERSION_CODE=2
 
 perl -pi -e "s/\sversion=\"\d+\.\d+\"\s/\ version=\"${VERSION}\"\ /" www/config.xml
 perl -pi -e "s/return\s\'\d+\.\d+\.\d+\'\;/return\ \'${VERSION}\.${VERSION_CODE}\'\;/" www/js/services.js 
