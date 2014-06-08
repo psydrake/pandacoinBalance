@@ -242,6 +242,12 @@ body {
 	padding: 10px;
 }
 
+.panda-button {
+	text-align: center;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+
 /* Media queries for different screen sizes */
 @media screen and (max-width: 640px){
     .table-balances input {
