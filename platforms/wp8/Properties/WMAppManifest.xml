@@ -4,7 +4,7 @@
     <Languages xmlns="">
         <Language code="en-US" />
     </Languages>
-    <App Author="Darkcoin Balance Author" BitsPerPixel="32" Description="See how many Darkcoin you own and what they're worth." Genre="apps.normal" ProductID="{793da1ff-cab6-4091-9415-afcbe2bd2c5b}" Publisher="Darkcoin Balance Publisher" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="Darkcoin Balance" Version="1.0" xmlns="">
+    <App Author="Pandacoin PND Balance Author" BitsPerPixel="32" Description="See how many Pandacoin you own and what they're worth." Genre="apps.normal" ProductID="{793da1ff-cab6-4091-9415-afcbe2bd2c5b}" Publisher="Pandacoin PND Balance Publisher" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="Pandacoin PND Balance" Version="1.0" xmlns="">
         <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
         <Capabilities>
             <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
@@ -14,12 +14,12 @@
             <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
         </Tasks>
         <Tokens>
-            <PrimaryToken TaskName="_default" TokenID="Darkcoin Balance">
+            <PrimaryToken TaskName="_default" TokenID="Pandacoin PND Balance">
                 <TemplateFlip>
                     <SmallImageURI IsRelative="true" IsResource="false">tileSmall.png</SmallImageURI>
                     <Count>0</Count>
                     <BackgroundImageURI IsRelative="true" IsResource="false">tileMedium.png</BackgroundImageURI>
-                    <Title>Darkcoin Balance</Title>
+                    <Title>Pandacoin Balance</Title>
                     <BackContent />
                     <BackBackgroundImageURI />
                     <BackTitle />

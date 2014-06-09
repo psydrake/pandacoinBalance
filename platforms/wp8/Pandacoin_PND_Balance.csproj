@@ -9,8 +9,8 @@
         <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>net.edrake.darkcoinbalance</RootNamespace>
-        <AssemblyName>net.edrake.darkcoinbalance</AssemblyName>
+        <RootNamespace>net.edrake.pandacoinbalance</RootNamespace>
+        <AssemblyName>net.edrake.pandacoinbalance</AssemblyName>
         <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
         <SilverlightVersion>
         </SilverlightVersion>
@@ -21,9 +21,9 @@
         <SupportedCultures>en-US</SupportedCultures>
         <XapOutputs>true</XapOutputs>
         <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-        <XapFilename>net.edrake.darkcoinbalance.xap</XapFilename>
+        <XapFilename>net.edrake.pandacoinbalance.xap</XapFilename>
         <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
-        <SilverlightAppEntry>net.edrake.darkcoinbalance.App</SilverlightAppEntry>
+        <SilverlightAppEntry>net.edrake.pandacoinbalance.App</SilverlightAppEntry>
         <ValidateXaml>true</ValidateXaml>
         <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
         <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
@@ -258,16 +258,22 @@
         <Content Include="www\favicon.ico" />
     </ItemGroup>
     <ItemGroup>
-        <Content Include="www\img\bg-192.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www\img\darkcoinBalance128x128.png" />
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="www\img\darkcoin_32.png" />
+        <Content Include="www\img\background.jpg" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\img\logo.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\pandacoin128.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\pandacoin32.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\pandacoin64.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="www\img\pndBalance128.png" />
     </ItemGroup>
     <ItemGroup>
         <Content Include="www\index.html" />

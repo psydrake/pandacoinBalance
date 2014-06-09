@@ -32,7 +32,7 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
-namespace net.edrake.darkcoinbalance
+namespace net.edrake.pandacoinbalance
 {
     public partial class App : Application
     {
