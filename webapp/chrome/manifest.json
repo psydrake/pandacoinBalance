@@ -3,7 +3,7 @@
   "description": "See how many Pandacoins (PND) you own and what they’re worth",
   "version": "1.0.2",
   "manifest_version": 2,
-  "icons": { "16": "pandacoinBalance16.png", "128": "pandacoinBalance128.png" },
+  "icons": { "16": "pndBalance16.png", "128": "pndBalance128.png" },
   "app": {
     "urls": [
 	"http://d1nhig552bjwdu.cloudfront.net/main.html"
