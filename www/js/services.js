@@ -78,7 +78,7 @@ angular.module('app.services', []).
 			},
 
 			getAppVersion: function() {
-				return '1.0.2'; // version
+				return '1.0.3'; // version
 			}
         }
     }).
