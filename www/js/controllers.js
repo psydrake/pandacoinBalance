@@ -126,7 +126,7 @@ angular.module('app.controllers', []).
 
 					cryptocoinchartsAPIService.convert($scope.data.currency, wallet.balance).success(function(total, price, btcPrice, isError) {
 						if (isError) {
-							$scope.data.error = 'Error retrieving exchange rate data!';
+							$scope.data.error = 'Error retrieving exchange rate data';
 						}
 						$log.info('total:', total, ', price:', price, ', btcPrice:', btcPrice);
 						$scope.data.convertedTotal += Number(total);
