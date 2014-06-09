@@ -113,6 +113,7 @@ angular.module('app.controllers', []).
 			$scope.data.total = 0;
 			$scope.data.convertedTotal = 0;
 
+			$scope.data.error = '';
 			angular.forEach($scope.data.wallets, function(wallet) {
 				delete wallet.error;
 				blockexplorerAPIService.getBalance(wallet.address).success(function (balance, isError) {
