@@ -172,9 +172,15 @@ angular.module('app.services', []).
 								var price  = data['price'];
 								$log.info('got price for currency', currency, ':', price);
 								fn(Number(price) * Number(balance), price, btcPrice);
+							}).error(function(data, status, headers, config) {
+								$log.warn('error! data:', data, ', status:', status, ', headers:', headers, ', config:', config);
+								fn(0, 0, 0, true); 
 							});
 						}
-					});
+					}).error(function(data, status, headers, config) {
+						$log.warn('error! data:', data, ', status:', status, ', headers:', headers, ', config:', config);
+						fn(0, 0, 0, true); 
+					});;
                 }
             };
         }

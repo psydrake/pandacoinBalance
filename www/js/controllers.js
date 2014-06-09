@@ -97,7 +97,8 @@ angular.module('app.controllers', []).
 			wallets: settingsService.getObject('wallets'),
 			loadCount: 0,
 			price: 0, // current price in selected non-DRK currency
-			btcPrice: 0 // current price in BTC
+			btcPrice: 0, // current price in BTC
+			error: ''
 		};
 
 		if (!$scope.data.wallets || $scope.data.wallets.length === 0) {
@@ -122,7 +123,10 @@ angular.module('app.controllers', []).
 					$log.info('balance for', wallet.address, 'is', wallet.balance);
 					$scope.data.total += wallet.balance;
 
-					cryptocoinchartsAPIService.convert($scope.data.currency, wallet.balance).success(function(total, price, btcPrice) {
+					cryptocoinchartsAPIService.convert($scope.data.currency, wallet.balance).success(function(total, price, btcPrice, isError) {
+						if (isError) {
+							$scope.data.error = 'Error retrieving exchange rate data!';
+						}
 						$log.info('total:', total, ', price:', price, ', btcPrice:', btcPrice);
 						$scope.data.convertedTotal += Number(total);
 						$scope.data.loadCount -= 1; // when loadCount reaches 0, we are done
