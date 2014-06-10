@@ -35,10 +35,10 @@ I have had success running the project on my physical Android phone. On the comm
 ## Install On Your Device
 * [Android](https://play.google.com/store/apps/details?id=net.edrake.pandacoinbalance)
 * [Amazon Kindle Fire](http://www.amazon.com/Drake-Emko-Pandacoin-PND-Balance/dp/B00KUH19EO)
-* [Windows Phone](http://www.windowsphone.com/en-us/store/app/darkcoin-balance/e6f1ed12-542f-42eb-8b91-8fb85090c1e2)
+* [Windows Phone](http://www.windowsphone.com/en-us/store/app/pandacoin-pnd-balance/5d4791a1-0028-42a7-8e5c-940578129b89)
 * [Chrome App](https://chrome.google.com/webstore/detail/lnaeedppehgnilkbklifknpnnldpcmgm)
 * [Firefox OS](https://marketplace.firefox.com/app/pandacoin-pnd-balance/)
-* [Blackberry 10](http://appworld.blackberry.com/webstore/content/56531889/)
+* [Blackberry 10](http://appworld.blackberry.com/webstore/content/57181891)
 * [Browse As A Web Site](http://d1nhig552bjwdu.cloudfront.net/main.html)
 
 ## Author
