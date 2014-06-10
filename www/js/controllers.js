@@ -172,17 +172,18 @@ angular.module('app.controllers', []).
     controller('aboutController', function($scope, $timeout, utilService, customService) {
 		$scope.data = {version: utilService.getAppVersion()};
 		$scope.showLogo1 = true; // there are two logos that we alternate between
+		$scope.LOGO_TIMEOUT = 10000; // time in milliseconds for each logo to display
 
 		$scope.toggleLogo = function() {
 			$scope.showLogo1 = !$scope.showLogo1;
 			$timeout(function() {
 				$scope.toggleLogo();
-			}, 30000);
+			}, $scope.LOGO_TIMEOUT);
 		}
 
 		$timeout(function() {
 			$scope.toggleLogo();
-		}, 30000);
+		}, $scope.LOGO_TIMEOUT);
 
 		customService.trackPage('/about');
     });
