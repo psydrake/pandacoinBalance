@@ -1,5 +1,5 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.6",
   "name": "Pandacoin PND Balance",
   "description": "See how many Pandacoins (PND) you own and what they’re worth",
   "launch_path": "/main.html",

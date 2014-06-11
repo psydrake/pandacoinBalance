@@ -1,7 +1,7 @@
 {
   "name": "Pandacoin PND Balance",
   "description": "See how many Pandacoins (PND) you own and what they’re worth",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "manifest_version": 2,
   "icons": { "16": "pndBalance16.png", "128": "pndBalance128.png" },
   "app": {
