@@ -43,7 +43,7 @@ def getBalance(address=''):
 
     try:
         data = urlfetch.fetch(url, deadline=TIMEOUT_DEADLINE)
-        if (not data or not data.content or data.content != 200):
+        if (not data or not data.content or data.status_code != 200):
             logging.warn('No content returned from ' + url)
             useBackupUrl = True
     except:
