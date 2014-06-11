@@ -1,7 +1,7 @@
 # Pandacoin PND Balance
 
 ## About
-Web / mobile app for checking the balance of your Pandacoin (PND) wallet address(es), as well as the currency value of Pandacoin.
+Web / mobile app for checking the balance of your [Pandacoin (PND)](http://pandacoinpnd.org/) wallet address(es), as well as the currency value of Pandacoin.
 
 ## Technical
 Pandacoin PND Balance consists of two parts:
