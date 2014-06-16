@@ -111,6 +111,9 @@ def pullTradingPair(currency1='PND', currency2='BTC'):
 
     try:
         data = urlfetch.fetch(url, deadline=TIMEOUT_DEADLINE)
+        if (not data or not data.content or data.status_code != 200):
+            logging.warn('No content returned from ' + url)
+            useBackupUrl = True
     except:
         logging.warn('Error retrieving ' + url)
         useBackupUrl = True
