@@ -17,7 +17,7 @@ This project is organized to make use of the Cordova command line tools (version
 * `merges/wp8`			- Windows Phone 8 specific web assets to override those in `www`
 * `platforms/android`	- Android specific files
 * `platforms/wp8`		- Windows Phone 8 specific files
-* `webap`				- files for hosted web app (Chrome, Firefox OS)
+* `webapp`				- files for hosted web app (Chrome, Firefox OS)
 * `webapp/chrome`		- metadata files for the Chrome hosted web app, including the manifest and icons
 
 ## Building and Running
