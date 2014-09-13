@@ -21,7 +21,7 @@ TRADING_PAIR_URL = 'http://www.cryptocoincharts.info/v2/api/tradingPair/'
 TRADING_PAIR_URL_BTC_BACKUP="https://api.mintpal.com/v1/market/stats/PND/" # also used for LTC
 TRADING_PAIR_URL_USD_BACKUP = 'https://coinbase.com/api/v1/prices/buy' 
 # TRADING_PAIR_URL_FIAT_BACKUP = 'http://api.bitcoincharts.com/v1/markets.json'
-BTCAVERAGE_URL = 'https://api.bitcoinaverage.com/ticker/' # used for BTC / GBP, AUD
+BTCAVERAGE_URL = 'https://api.bitcoinaverage.com/ticker/' # used for BTC / (EUR, GBP, CNY, AUD)
 
 TIMEOUT_DEADLINE = 12 # seconds
 
@@ -106,7 +106,7 @@ def tradingPND(currency='BTC'):
     return str(mReturn)
 
 def pullTradingPair(currency1='PND', currency2='BTC'):
-    url = BTCAVERAGE_URL + currency2 + '/' if currency2 in ['AUD', 'GBP'] else TRADING_PAIR_URL + currency1 + '_' + currency2
+    url = BTCAVERAGE_URL + currency2 + '/' if currency2 in ['EUR', 'GBP', 'CNY', 'AUD'] else TRADING_PAIR_URL + currency1 + '_' + currency2
     data = None
     useBackupUrl = False
 
@@ -133,7 +133,7 @@ def pullTradingPair(currency1='PND', currency2='BTC'):
             return
 
     dataDict = json.loads(data.content)
-    if (currency1 == 'BTC' and currency2 in ['AUD', 'GBP']):
+    if (currency1 == 'BTC' and currency2 in ['EUR', 'GBP', 'CNY', 'AUD']):
         # standardize format of exchange rate data from different APIs (we will use 'price' as a key)
         dataDict['price'] = dataDict['last'] 
 
