@@ -17,8 +17,8 @@ from server.controllers import RESOURCE_NAME_controller
 
 BLOCKEXPLORER_URL = 'http://pandachain.net/chain/PandaCoin/q/addressbalance/'
 BLOCKEXPLORER_URL_BACKUP = 'http://pnd.showed.us/chain/PandaCoin/q/addressbalance/'
-TRADING_PAIR_URL = 'http://www.cryptocoincharts.info/v2/api/tradingPair/'
-TRADING_PAIR_URL_BTC_BACKUP="https://api.mintpal.com/v1/market/stats/PND/" # also used for LTC
+TRADING_PAIR_URL = 'http://api.cryptocoincharts.info/tradingPair/'
+TRADING_PAIR_URL_BTC_BACKUP= 'https://api.mintpal.com/v1/market/stats/PND/' # also used for LTC
 TRADING_PAIR_URL_USD_BACKUP = 'https://coinbase.com/api/v1/prices/buy' 
 # TRADING_PAIR_URL_FIAT_BACKUP = 'http://api.bitcoincharts.com/v1/markets.json'
 BTCAVERAGE_URL = 'https://api.bitcoinaverage.com/ticker/' # used for BTC / (EUR, GBP, CNY, AUD)
@@ -106,9 +106,7 @@ def tradingPND(currency='BTC'):
     return str(mReturn)
 
 def pullTradingPair(currency1='PND', currency2='BTC'):
-    # temporarily commenting out TRADING_PAIR_URL (cryptocoincharts.info) url, since they apparently changed their API
-    # relying on backup URLs
-    url = BTCAVERAGE_URL + currency2 + '/' if currency2 in ['EUR', 'GBP', 'CNY', 'AUD'] else '' #TRADING_PAIR_URL + currency1 + '_' + currency2
+    url = BTCAVERAGE_URL + currency2 + '/' if currency2 in ['EUR', 'GBP', 'CNY', 'AUD'] else TRADING_PAIR_URL + currency1 + '_' + currency2
     data = None
     useBackupUrl = False
 
