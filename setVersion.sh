@@ -9,12 +9,18 @@
 VERSION=1.0
 
 # Only used in Android. Appended as minor version number if avaliable
-VERSION_CODE=9
+VERSION_CODE=10
 
 perl -pi -e "s/\sversion=\"\d+\.\d+\"\s/\ version=\"${VERSION}\"\ /" www/config.xml
 perl -pi -e "s/\sandroid\-versionCode=\"\d+\"\s/\ android-versionCode=\"${VERSION_CODE}\"\ /" www/config.xml
 perl -pi -e "s/return\s\'\d+\.\d+\.\d+\'\;/return\ \'${VERSION}\.${VERSION_CODE}\'\;/" www/js/services.js 
-perl -pi -e "s/android\:versionCode=\"\NaN\"/android\:versionCode=\"${VERSION_CODE}\"/" platforms/android/ant-build/AndroidManifest.xml
+if [ -e "platforms/android/ant-build/AndroidManifest.xml" ]; then
+	perl -pi -e "s/android\:versionCode=\"\NaN\"/android\:versionCode=\"${VERSION_CODE}\"/" platforms/android/ant-build/AndroidManifest.xml
+fi
+if [ -e "platforms/android/bin/AndroidManifest.xml" ]; then
+	perl -pi -e "s/android\:versionCode=\"\d+\"/android\:versionCode=\"${VERSION_CODE}\"/" platforms/android/bin/AndroidManifest.xml
+	perl -pi -e "s/android\:versionName=\"\d+\.\d+\"/android\:versionName=\"${VERSION}\"/" platforms/android/bin/AndroidManifest.xml
+fi
 perl -pi -e "s/android\:versionCode=\"\NaN\"/android\:versionCode=\"${VERSION_CODE}\"/" platforms/android/AndroidManifest.xml
 perl -pi -e "s/android\:versionCode=\"\d+\"/android\:versionCode=\"${VERSION_CODE}\"/" platforms/android/AndroidManifest.xml
 perl -pi -e "s/version\=\"\d+.\d+\"/version\=\"${VERSION}\"/" platforms/android/cordova/defaults.xml
