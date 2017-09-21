@@ -55,7 +55,7 @@ def home():
 def getBalance(address=''):
   response.content_type = 'application/json; charset=utf-8'
 
-  url = BLOCKEXPLORER_URL + address
+  url = BLOCKEXPLORER_URL + address + '&key=' + config.cryptoid_api_key
 
   data = urlfetch.fetch(url, deadline=TIMEOUT_DEADLINE)
   if (not data or not data.content or data.status_code != 200):
